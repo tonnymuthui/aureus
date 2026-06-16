@@ -11,18 +11,28 @@ const About = () => {
             <section className="intro">
                 <h1>About Us</h1>
                  <h3>
-          We Are A Branding And General Supplies Company
+          Aureus Company Limited is a dynamic and professionally driven supply and procurement company
+committed to delivering high-quality products and dependable business solutions across diverse
+industries.
           <br />
-          We Deliver Professional Merchandise, Uniforms, And Workplace Essentials
-          That Help Organizations Look Consistent, Safe, And Credible.
+        
+Founded on the principles of reliability, efficiency, and excellence, we specialize in the supply of
+personal protective equipment (PPE), corporate branding solutions, industrial supplies, safety wear,
+uniforms, promotional merchandise, and general procurement services.
+At Aureus Company Limited, we understand that every client requires a trusted partner capable of
+delivering quality products on time and within budget. Our approach combines professionalism,
+strategic sourcing, and customer-focused service to ensure every project is executed with precision
+and consistency.
+We serve corporate organizations, government institutions, NGOs, schools, hospitals, construction
+firms, manufacturing industries, and private enterprises.
         </h3>
             </section>
 
             <section className="mission">
                 <h1>Our Mission</h1>
                  <h3>
-          We Deliver Professional Merchandise, Uniforms, And Workplace Essentials
-          That Help Organizations Look Consistent, Safe, And Credible.
+          To become a leading and trusted supply and procurement partner recognized for excellence,
+innovation, reliability, and customer satisfaction across Africa and beyond.
         </h3>
 
             </section>
@@ -30,7 +40,8 @@ const About = () => {
              <section className="vision">
                 <h1>Our Vision</h1>
                  <h3>
-          We Are A Branding And General Supplies Company
+          To provide high-quality supply, branding, and procurement solutions through professionalism,
+integrity, efficiency, and strategic partnerships while creating long-term value for our clients.
           
         </h3>
 
@@ -39,17 +50,17 @@ const About = () => {
 
              <section className="values">
                 <h1>Our Values</h1>
-                 <h3>
+                 <p>
                     <ul>
                         <li>Excellence</li>
-                        <li>Quality</li>
-                        <li>Precision</li>
-                        <li>Professionalism</li>
+                        
+                        <li>Reliability</li>
+                        <li>Innovation</li>
+                        <li>Customer Focus</li>
                         <li>Integrity</li>
-
                     </ul>
           
-        </h3>
+                 </p>
 
             </section>
 
@@ -61,14 +72,22 @@ const About = () => {
 
 
             <Footer/>
-        </div>
+    
+
+
+    
+
+    </div>
 
 
 
 
 
-    )
+    );
 
 
 
-}
+};
+
+export default About;
+

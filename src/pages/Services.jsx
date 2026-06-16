@@ -1,0 +1,157 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import "../styles/services.css";
+
+
+const ppeCards = [
+  {
+    title: "Safety Gear Supply",
+    text: "Reliable PPE solutions that help protect your workforce and support workplace safety standards across multiple industries.",
+    image: "",
+  },
+  {
+    title: "Protective Clothing",
+    text: "Functional protective apparel designed to improve safety, comfort, and durability in the workplace.",
+    image: "",
+  },
+  {
+    title: "Head & Hand Protection",
+    text: "Essential protection products including helmets, gloves, and other safety accessories for daily use.",
+    image: "",
+  },
+  {
+    title: "Custom Safety Packages",
+    text: "Flexible PPE supply packages tailored to the needs of your business, team size, and budget.",
+    image: "",
+  },
+];
+
+
+const workwearCards = [
+  {
+    title: "Corporate Uniforms",
+    text: "Professional office and staff uniforms designed for comfort, consistency, and a polished corporate appearance. Customized to suit your brand and workplace needs.",
+    image: "",
+  },
+  {
+    title: "Industrial Workwear",
+    text: "Durable and practical workwear made for demanding environments and everyday use across different industries.",
+    image: "",
+  },
+  {
+    title: "Custom Embroidery & Printing",
+    text: "High-quality branding solutions that help your team and company identity stand out clearly and professionally.",
+    image: "",
+  },
+  {
+    title: "Industry-Specific Solutions",
+    text: "Tailored workwear solutions designed to match the requirements of your sector and working conditions.",
+    image: "",
+  },
+];
+
+const brandingCards = [
+  {
+    title: "Branded Apparel",
+    text: "Reliable PPE solutions that help protect your workforce and support workplace safety standards across multiple industries.",
+    image: "",
+  },
+  {
+    title: "Promotional Items",
+    text: "Functional protective apparel designed to improve safety, comfort, and durability in the workplace.",
+    image: "",
+  },
+  {
+    title: "Corpotate Event Branding",
+    text: "Essential protection products including helmets, gloves, and other safety accessories for daily use.",
+    image: "",
+  },
+  
+];
+
+
+const ServicesSection = ({ badge, title, description, bgImage, cards }) => {
+  return (
+    <section className="services-body__section">
+      <div className="services-body__badge">{badge}</div>
+
+      <div className="services-body__hero">
+        <img src={bgImage} alt={title} className="services-body__hero-image" />
+        <div className="services-body__hero-overlay">
+          <h2 className="services-body__hero-title">{title}</h2>
+        </div>
+      </div>
+
+      <p className="services-body__description">{description}</p>
+
+      <div className="services-body__cards">
+        {cards.map((card, index) => (
+          <article className="service-card" key={index}>
+            <div className="service-card__image-wrap">
+              <img src={card.image} alt={card.title} className="service-card__image" />
+            </div>
+
+            <h3 className="service-card__title">{card.title}</h3>
+            <p className="service-card__text">{card.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+
+
+const Services = () => {
+        <div>
+            <Navbar/>
+            <section className="heading">
+                <h1>Our Services</h1>
+
+            </section>
+            <section>
+             <h3>
+          We Are A Branding And General Supplies Company
+          <br />
+          We Deliver Professional Merchandise, Uniforms, And Workplace Essentials
+          That Help Organizations Look Consistent, Safe, And Credible.
+            </h3>
+            </section>
+             <div className="services-body">
+            <ServicesSection
+                badge="view some of our previous work"
+                title="Personal Protective Equipment (PPEs)"
+                bgImage=""
+                description="Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
+                cards={ppeCards}
+            />
+            <ServicesSection
+                badge="view some of our previous work"
+                title="Branded Workwear"
+                bgImage=""
+                description="We Provide Durable And Professional Workwear Solutions Customized To Suit Different Industries And Working Environments While Maintaining Your Company’s Brand Identity."
+                cards={workwearCards}
+            />
+
+            <ServicesSection
+                badge="view some of our previous work"
+                title="Personal Protective Equipment (PPEs)"
+                bgImage=""
+                description="Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
+                cards={brandingCards}
+            />
+    </div>
+
+
+
+
+            <Footer/>
+
+        </div>
+
+
+
+}
+
+
+export default Services;

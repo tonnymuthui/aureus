@@ -13,9 +13,11 @@ const Home = () => {
 
       <section className="intro">
         <h1>
-          We Are A Branding And General Supplies Company
+          Aureus Company Limited is a dynamic and professionally driven supply and procurement company
+committed to delivering high-quality products and dependable business solutions across diverse
+industries.
           <br />
-          We Deliver Professional Merchandise, Uniforms, And Workplace Essentials
+          We Deliver Persona Protective Equipment, Professional Merchandise, Uniforms, And Workplace Essentials
           That Help Organizations Look Consistent, Safe, And Credible.
         </h1>
       </section>
@@ -24,12 +26,13 @@ const Home = () => {
         <h2>We Provide Services That Elevate Your Business</h2>
 
         <div className="service service--left">
-          <img src="" alt="Corporate Branding & Promotional Merchandise" />
+          <img src="" alt="Personal Protective Equipment (PPEs)" />
           <div className="service__content service__content--dark">
             <h3></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Aureus Company Limited is a dynamic and professionally driven supply and procurement company
+committed to delivering high-quality products and dependable business solutions across diverse
+industries.
             </p>
             <button>Learn More</button>
           </div>
@@ -39,8 +42,8 @@ const Home = () => {
           <div className="service__content service__content--dark">
             <h3>Branded Workwear</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We offer efficient sourcing and supply solutions tailored to institutional, corporate, and industrial
+requirements.
             </p>
             <button>Learn More</button>
           </div>
@@ -48,12 +51,12 @@ const Home = () => {
         </div>
 
         <div className="service service--left">
-          <img src="" alt="Personal Protective Equipment" />
+          <img src="" alt="Corporate Branding & Promotional Merchandise" />
           <div className="service__content service__content--dark">
             <h3>Corporate Branding & Promotional Merchandise</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We provide professional branding services that help businesses enhance visibility and strengthen
+brand identity.
             </p>
             <button>Learn More</button>
           </div>
