@@ -1,12 +1,16 @@
 // import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/navbar.css";
 import logo from "../assets/aureus2.png"
 
 const Navbar = () => {
+  const navigate = useNavigate;
   return (
+    
+
     <header className="navbar">
       <div className="navbar__logo">
-        <img src={logo} alt="Aureus Company Limited Logo" className="navbar__logo-img" />
+        <img src={logo} onClick={() => navigate('/')} alt="Aureus Company Limited Logo" className="navbar__logo-img" />
       </div>
         <div>
       <nav className="navbar__links">

@@ -2,11 +2,11 @@
 import "../styles/home.css";
 import Navbar from "../components/navbar.jsx";
 import HeroSlider from "../components/heroSlider";
-// import LogoCarousel from "../components/logoCarousel";
+import LogoCarousel from "../components/logoCarousel";
 import Footer from "../components/footer";
 // import { useNavigate } from "react-router-dom";
 // import hero1 from "../assets/herotest.png"
-import coop from "../assets/coop.jpg";
+import coop from "../assets/coopb.png";
 import ppes from "../assets/PPEs.jpg";
 import workwear from "../assets/workwear2.png";
 
@@ -16,10 +16,12 @@ const Home = () => {
   // const handleredirect 
 
   return (
+    
     <div className="home">
+      <Navbar />
       <section>
 
-       <Navbar />
+       {/* <Navbar /> */}
       </section>
 
      
@@ -116,16 +118,16 @@ brand identity.
         <h2>Quality Service In Four Steps</h2>
 
         <div className="process__steps">
-          <div className="process__step">Send Inquiry</div>
-          <div className="process__step">Share Your Requirements</div>
-          <div className="process__step">Receive Quote & Mock-Ups</div>
-          <div className="process__step process__step--final">Production And Delivery</div>
+          <div className="process__step">1.     Send Inquiry</div>
+          <div className="process__step">2.      Share Your Requirements</div>
+          <div className="process__step">3.      Receive Quote & Mock-Ups</div>
+          <div className="process__step process__step--final">4.                   Production And Delivery</div>
         </div>
       </section>
 
       <section className="clients">
         <h2>Our Partners & Clients</h2>
-        {/* <LogoCarousel /> */}
+        <LogoCarousel />
       </section>
 
       <Footer /> 

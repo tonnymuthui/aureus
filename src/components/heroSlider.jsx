@@ -1,8 +1,9 @@
 import  { useEffect, useState } from "react";
-import "../styles/HeroSlider.css";
-import hero from "../assets/herotest.jpg"
-import ww from "../assets/workwear.png"
-import ppe from "../assets/ppe2.jpg"
+import { useNavigate } from "react-router-dom";
+import "../styles/heroSlider.css";
+import hero from "../assets/hero1.png"
+import ww from "../assets/ww.png"
+import ppe from "../assets/PPEs.jpg"
 
 
 
@@ -25,12 +26,14 @@ const slides = [
 ];
 
 const HeroSlider = () => {
+  const navigate = useNavigate;
+
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -48,7 +51,7 @@ const HeroSlider = () => {
               <div className="hero__card">
                 <h2>{slide.title}</h2>
                 <p>{slide.text}</p>
-                <button className="hero__btn">Get Quote</button>
+                <button type="button" onClick={() => navigate('/services')} className="hero__btn">Get Quote</button>
               </div>
             </div>
           </div>
