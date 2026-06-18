@@ -2,6 +2,8 @@ import { useRef } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import emailjs from "@emailjs/browser";
+import "../styles/contact.css";
+
 
 
 
@@ -57,34 +59,40 @@ const Contact = () => {
                 </section>
                 <section>
                     <div className="contact_form">
-                        <h2>Mandatory Fields are Marked with an Asterisk(*)</h2>
+                        <h3>Mandatory Fields are Marked with an Asterisk(*)</h3>
                          <form ref={form} onSubmit={sendEmail}>
 
-                            <label></label>
-                            <select id="inquiry" name="inquiry">
+                            <label>Inquiry Type</label> <br/>
+                            <select id="inquiry" name="inquiry">  
                                 <option value="PPEs Inquiry">PPEs Inquiry</option>
-                                <option value="Workwear Inquiry">WorkWear Inquiry</option>
-                                <option value="Corporate Branding Inquiry">PPEs Inquiry</option>
+                                <option value="General Supplies Inquiry">General Suplies Inquiry</option>
+                                <option value="Corporate Branding Inquiry">Corporate Branding Inquiry</option>
                                 <option value="Other Inquiry">Other Inquiry</option>
                             </select>
 
-
-                            <label>Full Name</label>
+                            <br/>
+                            <label>Full Name *</label>
+                            <br/>
                             <input name="client" type="text"></input>
-
+                            <br/>
                             <label>Email Address * </label>
+                            <br/>
                             <input name="email" type="email"></input>
-
+                            <br/>
                             <label>Phone Number</label>
-                            <input name="number" type="numbeer"></input>
-
+                            <br/>
+                            <input name="number" type="tel"></input>
+                            <br/>
                             <label>Company / Organisation</label>
+                            <br/>
                             <input name="org" type="text"></input>
-
-                            <label>Message *</label>
+                            <br/>
+                            <label>Message *</label> 
+                            <br/>
                             <textarea name="message" rows="6" required>
 
                             </textarea>
+                            <br/>
 
                             <button type="submit">
                                 Submit

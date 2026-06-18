@@ -1,21 +1,26 @@
 import  { useEffect, useState } from "react";
 import "../styles/HeroSlider.css";
+import hero from "../assets/herotest.jpg"
+import ww from "../assets/workwear.png"
+import ppe from "../assets/ppe2.jpg"
+
+
 
 const slides = [
   {
-    image: "",
-    title: "Branding",
-    text: "Your new chapter is being crafted with intention. Our 10+ years experience is on its way—refined, considered, and worthy of the name.",
+    image: ppe,
+    title: "PPE Solutions",
+    text: "Reliable protective equipment and workplace essentials delivered with quality and consistency.",
   },
   {
-    image: "",
+    image: ww,
     title: "Workwear",
     text: "Professional branded uniforms and workwear that make your team look sharp, unified, and credible.",
   },
   {
-    image: "",
-    title: "PPE Solutions",
-    text: "Reliable protective equipment and workplace essentials delivered with quality and consistency.",
+    image: hero,
+    title: "Branding",
+    text: "Your new chapter is being crafted with intention. Our 10+ years experience is on its way—refined, considered, and worthy of the name..",
   },
 ];
 

@@ -1,0 +1,190 @@
+.about {
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* ==========================
+   Shared Section Styling
+========================== */
+
+.intro,
+.mission,
+.vision,
+.values,
+.promise {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ==========================
+   About Us Section
+========================== */
+
+.intro {
+    padding-top: 60px;
+}
+
+.intro h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 2rem;
+    font-weight: 400;
+    color: #caa54b;
+
+    margin-bottom: 25px;
+}
+
+.intro h1::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0cf9b;
+}
+
+.intro h3 {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #555;
+    max-width: 750px;
+}
+
+/* ==========================
+   Mission
+========================== */
+
+.mission {
+    margin-top: 70px;
+}
+
+.mission h1 {
+    color: #caa54b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.mission h3 {
+    max-width: 650px;
+    margin-left: 20px;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #555;
+}
+
+/* ==========================
+   Vision
+========================== */
+
+.vision {
+    margin-top: 60px;
+}
+
+.vision h1 {
+    color: #caa54b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.vision h3 {
+    max-width: 650px;
+    margin-left: 20px;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #555;
+}
+
+/* ==========================
+   Values
+========================== */
+
+.values {
+    margin-top: 60px;
+}
+
+.values h1 {
+    color: #caa54b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.values ul {
+    margin-left: 40px;
+    color: #555;
+    line-height: 2;
+    font-size: 0.95rem;
+}
+
+/* ==========================
+   Promise
+========================== */
+
+.promise {
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.promise h1 {
+    color: #caa54b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.promise h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.promise ul {
+    margin-left: 40px;
+    color: #555;
+    line-height: 2;
+    font-size: 0.95rem;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+    .intro,
+    .mission,
+    .vision,
+    .values,
+    .promise {
+        width: 90%;
+    }
+
+    .intro h1 {
+        font-size: 1.7rem;
+    }
+
+    .mission h1,
+    .vision h1,
+    .values h1,
+    .promise h1 {
+        font-size: 1.4rem;
+    }
+
+    .intro h3,
+    .mission h3,
+    .vision h3 {
+        font-size: 0.9rem;
+    }
+
+    .promise h2 {
+        font-size: 1.05rem;
+    }
+}

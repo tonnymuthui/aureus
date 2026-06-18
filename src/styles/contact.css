@@ -1,0 +1,173 @@
+.contact {
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* ==========================
+   Contact Heading
+========================== */
+
+.heading {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.heading h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #c9a64c;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.heading h1::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e4d3a3;
+}
+
+/* ==========================
+   Contact Intro
+========================== */
+
+.contact section p {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.contact section p strong {
+    font-weight: 600;
+}
+
+/* ==========================
+   Form Container
+========================== */
+
+.contact_form {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto 80px;
+}
+
+.contact_form h3 {
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+/* ==========================
+   Form
+========================== */
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form label {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+
+
+.contact_form input,
+.contact_form select {
+    width: 320px;
+    height: 36px;
+
+    border: none;
+    background: #d9d9d9;
+
+    padding: 0 12px;
+    font-size: 0.95rem;
+    color: #333;
+
+    margin-bottom: 18px;
+}
+
+.contact_form textarea {
+    width: 100%;
+    max-width: 700px;
+    min-height: 170px;
+
+    border: none;
+    background: #d9d9d9;
+
+    padding: 12px;
+    resize: vertical;
+
+    font-size: 0.95rem;
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+.contact_form input:focus,
+.contact_form select:focus,
+.contact_form textarea:focus {
+    outline: 1px solid #c9a64c;
+}
+
+
+
+.contact_form button {
+    width: 110px;
+    height: 46px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #aa7e0d;
+    color: #111;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact_form button:hover {
+    background: #b89438;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .heading,
+    .contact_form,
+    .contact section p {
+        width: 90%;
+    }
+
+    .heading h1 {
+        font-size: 1.7rem;
+    }
+
+    .contact_form input,
+    .contact_form select,
+    .contact_form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact_form textarea {
+        min-height: 150px;
+    }
+}

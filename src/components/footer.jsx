@@ -1,11 +1,13 @@
 // import React from "react";
 import "../styles/Footer.css";
+import logo from "../assets/aureus2.png"
+
 
 const Footer = () => {
   return (
     <footer id="contact" className="footer">
       <div className="footer__left">
-        <img src="" alt="Aureus Company Limited" className="footer__logo" />
+        <img src={logo} alt="Aureus Company Limited" className="footer__logo" />
 
         <div className="footer__socials">
           <a href="" aria-label="LinkedIn">in</a>

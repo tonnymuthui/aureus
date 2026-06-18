@@ -1,6 +1,9 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/services.css";
+import coop from "../assets/coop.jpg";
+import ppes from "../assets/PPEs.jpg";
+import workwear from "../assets/workwear2.png";
 
 
 const ppeCards = [
@@ -27,7 +30,7 @@ const ppeCards = [
 ];
 
 
-const workwearCards = [
+const genSuppliesCards = [
   {
     title: "Corporate Uniforms",
     text: "Professional office and staff uniforms designed for comfort, consistency, and a polished corporate appearance. Customized to suit your brand and workplace needs.",
@@ -103,6 +106,7 @@ const ServicesSection = ({ badge, title, description, bgImage, cards }) => {
 
 
 const Services = () => {
+      return (
         <div>
             <Navbar/>
             <section className="heading">
@@ -111,7 +115,7 @@ const Services = () => {
             </section>
             <section>
              <h3>
-          We Are A Branding And General Supplies Company
+          We Are A PPEs, Branding And General Supplies Company
           <br />
           We Deliver Professional Merchandise, Uniforms, And Workplace Essentials
           That Help Organizations Look Consistent, Safe, And Credible.
@@ -121,25 +125,34 @@ const Services = () => {
             <ServicesSection
                 badge="view some of our previous work"
                 title="Personal Protective Equipment (PPEs)"
-                bgImage=""
+                bgImage = {ppes}
                 description="Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
                 cards={ppeCards}
             />
             <ServicesSection
                 badge="view some of our previous work"
-                title="Branded Workwear"
-                bgImage=""
+                title="Corporate Branding"
+                bgImage={coop}
                 description="We Provide Durable And Professional Workwear Solutions Customized To Suit Different Industries And Working Environments While Maintaining Your Company’s Brand Identity."
-                cards={workwearCards}
+                cards={brandingCards}
             />
 
             <ServicesSection
                 badge="view some of our previous work"
+                title="General Supplies & Procurement"
+                bgImage={workwear}
+                description="We offer efficient sourcing and supply solutions tailored to institutional, corporate, and industrial
+requirements."
+                cards={genSuppliesCards}
+            />
+
+              {/* <ServicesSection
+                badge="view some of our previous work"
                 title="Personal Protective Equipment (PPEs)"
                 bgImage=""
                 description="Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
-                cards={brandingCards}
-            />
+                cards={logisticsCards}
+            /> */}
     </div>
 
 
@@ -149,7 +162,7 @@ const Services = () => {
 
         </div>
 
-
+              );
 
 }
 
