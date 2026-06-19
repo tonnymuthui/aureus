@@ -1,8 +1,8 @@
 import  { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/heroSlider.css";
-import hero from "../assets/hero1.png"
-import ww from "../assets/ww.png"
+import hero from "../assets/hero3.png"
+import ww from "../assets/hero6.png"
 import ppe from "../assets/PPEs.jpg"
 
 
@@ -21,7 +21,7 @@ const slides = [
   {
     image: hero,
     title: "Branding",
-    text: "Your new chapter is being crafted with intention. Our 10+ years experience is on its way—refined, considered, and worthy of the name..",
+    text: "Your Company's image crafted with intention. For visibility and to inspire Trust",
   },
 ];
 
@@ -33,7 +33,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6500);
 
     return () => clearInterval(interval);
   }, []);
@@ -51,7 +51,7 @@ const HeroSlider = () => {
               <div className="hero__card">
                 <h2>{slide.title}</h2>
                 <p>{slide.text}</p>
-               <a href="/services"> <button type="button" onClick={() => navigate('/services')} className="hero__btn">Get Quote</button></a>
+               <Link to="/services"> <button type="button" onClick={() => navigate('/services')} className="hero__btn">Get Quote</button></Link>
               </div>
             </div>
           </div>

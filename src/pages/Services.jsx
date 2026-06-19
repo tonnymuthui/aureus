@@ -26,7 +26,7 @@ const ppeCards = [
   {
     title: "Safety Gear Supply",
     text: "Reliable PPE solutions that help protect your workforce and support workplace safety standards across multiple industries.",
-    image: safe,
+    image: safe ,
   },
   {
     title: "Protective Clothing",
@@ -108,7 +108,7 @@ const ServicesSection = ({ badge, title, description, bgImage, cards }) => {
         {cards.map((card, index) => (
           <article className="service-card" key={index}>
             <div className="service-card__image-wrap">
-              <img src={card.image} alt={card.title} className="service-card__image" />
+              <img src={card.image} alt={card.title} className="service-card__image" loading="lazy" />
             </div>
 
             <h3 className="service-card__title">{card.title}</h3>

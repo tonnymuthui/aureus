@@ -1,5 +1,6 @@
 // import React from "react";
-import "../styles/Footer.css";
+import { Link } from "react-router-dom";
+import "../styles/footer.css";
 import logo from "../assets/aureus2.png"
 
 
@@ -20,16 +21,16 @@ const Footer = () => {
       <div className="footer__links">
         <div>
           <h4>Contact</h4>
-          <a href="/contact">Contact Us</a>
-          <a href="/contact">Request Quote</a>
+          <Link to="/contact">Contact Us</Link >
+          <Link to="/contact">Request Quote</Link >
         </div>
 
         <div>
           <h4>Company</h4>
-          <a href="/about">About Us</a>
-          <a href="/services">Services</a>
-          <a href="">Projects</a>
-          <a href="">Careers</a>
+          <Link to="/about">About Us</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/">Projects</Link>
+          <Link to="/">Careers</Link>
         </div>
       </div>
     </footer>

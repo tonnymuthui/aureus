@@ -4,7 +4,7 @@ import Navbar from "../components/navbar.jsx";
 import HeroSlider from "../components/heroSlider";
 import LogoCarousel from "../components/logoCarousel";
 import Footer from "../components/footer";
-// import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import hero1 from "../assets/herotest.png"
 import coop from "../assets/coopb.png";
 import ppes from "../assets/PPEs.jpg";
@@ -77,13 +77,13 @@ industries.
         <h2>We Provide Services That Elevate Your Business</h2>
 
         <div className="service service--left">
-          <img src={ppes} alt="Personal Protective Equipment (PPEs)" />
+          <img src={ppes} alt="Personal Protective Equipment (PPEs)" loading="lazy"/>
           <div className="service__content service__content--dark">
             <h3>Personal Protective Equipment (PPEs)</h3>
             <p>
               At Aureus we are commited to supplying company workers with required safety gear, the right equipment, formally documenting the handover, and training them.
             </p>
-            <a href="/services"><button>Learn More</button></a>
+            <Link to="/services"><button>Learn More</button></Link>
           </div>
         </div>
 
@@ -94,20 +94,20 @@ industries.
               We offer efficient sourcing and supply solutions tailored to institutional, corporate, and industrial
 requirements.
             </p>
-            <a href="/services"><button>Learn More</button></a>
+            <Link to="/services"><button>Learn More</button></Link>
           </div>
-          <img src={workwear} alt="Branded Workwear" />
+          <img src={workwear} alt="Branded Workwear" loading="lazy" />
         </div>
 
         <div className="service service--left">
-          <img src={coop} alt="Corporate Branding & Promotional Merchandise" />
+          <img src={coop} alt="Corporate Branding & Promotional Merchandise" loading="lazy" />
           <div className="service__content service__content--dark">
             <h3>Corporate Branding & Promotional Merchandise</h3>
             <p>
               We provide professional branding services that help businesses enhance visibility and strengthen
 brand identity.
             </p>
-            <a href="/services"><button>Learn More</button></a>
+            <Link to="/services"><button>Learn More</button></Link>
           </div>
         </div>
       </section>
