@@ -81,7 +81,7 @@ const brandingCards = [
     image: promo,
   },
   {
-    title: "Corpotate Event Branding",
+    title: "Corporate Event Branding",
     text: " We provide  the strategic integration of a company’s identity, values, and messaging into every aspect of an event. Transforming gatherings from simple logistical exercises into immersive experiences that reinforce brand recognition and forge emotional connections with attendees.",
     
     image: event,

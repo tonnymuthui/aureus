@@ -3,9 +3,7 @@
     min-height: 100vh;
 }
 
-/* ==========================
-   Contact Heading
-========================== */
+
 
 .heading {
     width: 85%;
@@ -29,28 +27,62 @@
     flex: 1;
     height: 1px;
     background: #e4d3a3;
+
 }
 
-/* ==========================
-   Contact Intro
-========================== */
 
-.contact section p {
+.contact-details-card {
     width: 85%;
+    align-items: center;
+     display: flex;
+    align-items: center;
+    
     max-width: 900px;
-    margin: 20px auto 0;
+    padding: 20px 25px;
+     margin: 20px 300px 0px;
+    background: white;
+    border-left: 3px solid #c9a64c;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+
+.contact-details {
+    margin-top: 25px;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 0;
+
     color: #444;
     font-size: 0.95rem;
-    line-height: 1.8;
+    font-weight: 400;
 }
 
-.contact section p strong {
-    font-weight: 600;
+.contact-details a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* ==========================
-   Form Container
-========================== */
+.contact-details a:hover {
+    color: #c9a64c;
+}
+
+.contact-icon {
+    color: #c9a64c;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
 
 .contact_form {
     width: 85%;
@@ -65,9 +97,7 @@
     margin-bottom: 25px;
 }
 
-/* ==========================
-   Form
-========================== */
+
 
 .contact_form form {
     display: flex;
@@ -129,7 +159,7 @@
     border: none;
     border-radius: 30px;
 
-    background: #aa7e0d;
+    background: #e4b848;
     color: #111;
 
     font-size: 1rem;
@@ -144,9 +174,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================
-   Responsive
-========================== */
+
 
 @media (max-width: 768px) {
 

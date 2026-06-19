@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import logo from "../assets/aureus2.png"
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -23,6 +25,19 @@ const Footer = () => {
           <h4>Contact</h4>
           <Link to="/contact">Contact Us</Link >
           <Link to="/contact">Request Quote</Link >
+          <p>
+                  
+                          <a href="mailto:info@aureus.co.ke"><MdEmail className="contact-icon" />
+                      info@aureus.co.ke
+                      </a>
+                       </p>
+          
+                      <p>
+                          
+                          <a href="tel:+254721885458"><FaPhoneAlt className="contact-icon" /> 
+                              +254 721 885 458
+                          </a>
+                      </p>
         </div>
 
         <div>

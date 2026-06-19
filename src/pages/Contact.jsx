@@ -3,6 +3,9 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import emailjs from "@emailjs/browser";
 import "../styles/contact.css";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 
 
@@ -47,18 +50,35 @@ const Contact = () => {
                 <section className="heading">
                     <h1>Contact Us</h1>
 
-                </section>
-                <section>
-                    <p>Get in Touch with one of our professionals through for a quote or Inquiry: <br/> <br/>
-
-                        📩 info@aurelius.co.ke<br/> 
-                        📞 0712345678
-                        <br/> <br/>
-                        or fill the form below</p>
+                
 
                 </section>
+                <section className="contact-details-card">
+                <section className="contact-details">
+                    <p className="p_name">Get in Touch with one of our professionals for a quote or Inquiry through:</p><br/>
+             <p>
+        <MdEmail className="contact-icon" />
+                <a href="mailto:info@aureus.co.ke">
+            info@aureus.co.ke
+            </a>
+             </p>
+
+            <p>
+                <FaPhoneAlt className="contact-icon" />
+                <a href="tel:+254721885458">
+                    +254 721 885 458
+                </a>
+            </p>
+
+            <p>
+                <FaLocationDot className="contact-icon" />
+                New Commercial House, Industrial Area - Nairobi, Kenya
+            </p>
+            </section>
+            </section>
                 <section>
                     <div className="contact_form">
+                        <i><h3>OR Kindly fill the Form Below</h3></i>
                         <h3>Mandatory Fields are Marked with an Asterisk(*)</h3>
                          <form ref={form} onSubmit={sendEmail}>
 
