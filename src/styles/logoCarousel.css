@@ -1,6 +1,6 @@
 .logo-carousel {
   width: 100%;
-  padding: 56px 0;
+  padding: 66px 0;
   background: #ffffff;
   box-sizing: border-box;
 }
@@ -49,7 +49,7 @@
 .logo-carousel__slot {
   flex: 0 0 auto;
   width: 160px;
-  height: 70px;
+  height: 100%;
   margin: 0 28px;
   display: flex;
   align-items: center;
@@ -57,8 +57,8 @@
 }
 
 .logo-carousel__slot img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 110%;
+  max-height: 130%;
   object-fit: contain;
   filter: grayscale(1) opacity(0.55);
   transition: filter 0.35s ease, transform 0.35s ease;
@@ -90,7 +90,7 @@
 @media (max-width: 768px) {
   .logo-carousel__slot {
     width: 110px;
-    height: 56px;
+    height: 100px;
     margin: 0 18px;
   }
 }

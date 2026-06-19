@@ -10,7 +10,7 @@ const Navbar = () => {
 
     <header className="navbar">
       <div className="navbar__logo">
-        <img src={logo} onClick={() => navigate('/')} alt="Aureus Company Limited Logo" className="navbar__logo-img" />
+        <a href="/"><img src={logo} onClick={() => navigate('')} alt="Aureus Company Limited Logo" className="navbar__logo-img" /> </a>
       </div>
         <div>
       <nav className="navbar__links">

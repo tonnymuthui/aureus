@@ -7,7 +7,7 @@ import jambo from "../assets/logos/jambo.PNG";
 import kq from "../assets/logos/kq.svg";
 import cure from "../assets/logos/cure.webp";
 import qona from "../assets/logos/qona.png";
-import eac from "../assets/logos/kplc.png";
+import eac from "../assets/logos/eac.png";
 import cfao from "../assets/logos/cfao.png";
 
 
@@ -38,7 +38,7 @@ const defaultLogos = [
 ];
 
 const LogoCarousel = ({ logos = defaultLogos, title = "Trusted by industry leaders" }) => {
-  // Duplicate the set so the strip can loop with no visible seam.
+  
   const track = [...logos, ...logos];
 
   return (

@@ -64,11 +64,11 @@ const Home = () => {
 
       <section className="intro">
         <h1>
-          Aureus Company Limited is a dynamic and professionally driven supply and procurement company
+          Aureus Company Limited is a dynamic and professionally driven PPEs supply and procurement company
 committed to delivering high-quality products and dependable business solutions across diverse
 industries.
           <br />
-          We Deliver Persona Protective Equipment, Professional Merchandise, Uniforms, And Workplace Essentials
+          We Deliver Personal Protective Equipment, Professional Merchandise, Uniforms, And Workplace Essentials
           That Help Organizations Look Consistent, Safe, And Credible.
         </h1>
       </section>
@@ -81,11 +81,9 @@ industries.
           <div className="service__content service__content--dark">
             <h3>Personal Protective Equipment (PPEs)</h3>
             <p>
-              Aureus Company Limited is a dynamic and professionally driven supply and procurement company
-committed to delivering high-quality products and dependable business solutions across diverse
-industries.
+              At Aureus we are commited to supplying company workers with required safety gear, the right equipment, formally documenting the handover, and training them.
             </p>
-            <button>Learn More</button>
+            <a href="/services"><button>Learn More</button></a>
           </div>
         </div>
 
@@ -96,7 +94,7 @@ industries.
               We offer efficient sourcing and supply solutions tailored to institutional, corporate, and industrial
 requirements.
             </p>
-            <button>Learn More</button>
+            <a href="/services"><button>Learn More</button></a>
           </div>
           <img src={workwear} alt="Branded Workwear" />
         </div>
@@ -109,7 +107,7 @@ requirements.
               We provide professional branding services that help businesses enhance visibility and strengthen
 brand identity.
             </p>
-            <button>Learn More</button>
+            <a href="/services"><button>Learn More</button></a>
           </div>
         </div>
       </section>

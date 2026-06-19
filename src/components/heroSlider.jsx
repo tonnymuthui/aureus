@@ -51,7 +51,7 @@ const HeroSlider = () => {
               <div className="hero__card">
                 <h2>{slide.title}</h2>
                 <p>{slide.text}</p>
-                <button type="button" onClick={() => navigate('/services')} className="hero__btn">Get Quote</button>
+               <a href="/services"> <button type="button" onClick={() => navigate('/services')} className="hero__btn">Get Quote</button></a>
               </div>
             </div>
           </div>

@@ -20,13 +20,13 @@ const Footer = () => {
       <div className="footer__links">
         <div>
           <h4>Contact</h4>
-          <a href="">Contact Us</a>
-          <a href="">Request Quote</a>
+          <a href="/contact">Contact Us</a>
+          <a href="/contact">Request Quote</a>
         </div>
 
         <div>
           <h4>Company</h4>
-          <a href="">About Us</a>
+          <a href="/about">About Us</a>
           <a href="/services">Services</a>
           <a href="">Projects</a>
           <a href="">Careers</a>

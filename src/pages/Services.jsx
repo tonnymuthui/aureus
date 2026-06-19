@@ -82,7 +82,8 @@ const brandingCards = [
   },
   {
     title: "Corpotate Event Branding",
-    text: "Essential protection products including helmets, gloves, and other safety accessories for daily use.",
+    text: " We provide  the strategic integration of a company’s identity, values, and messaging into every aspect of an event. Transforming gatherings from simple logistical exercises into immersive experiences that reinforce brand recognition and forge emotional connections with attendees.",
+    
     image: event,
   },
   
@@ -142,7 +143,7 @@ const Services = () => {
                 badge="view some of our previous work"
                 title="Personal Protective Equipment (PPEs)"
                 bgImage = {ppes}
-                description="Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
+                description= "Protect your workforce with reliable safety equipment and PPE solutions designed to meet workplace safety standards across multiple industries."
                 cards={ppeCards}
             />
 
