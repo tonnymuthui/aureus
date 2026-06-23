@@ -1,6 +1,7 @@
 .contact {
     background: #f4f4f4;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -33,19 +34,15 @@
 
 .contact-details-card {
     width: 85%;
-    align-items: center;
-     display: flex;
-    align-items: center;
-    
     max-width: 900px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
     padding: 20px 25px;
-     margin: 20px 300px 0px;
     background: white;
     border-left: 3px solid #c9a64c;
-
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
-
 
 .contact-details {
     margin-top: 25px;
@@ -180,6 +177,7 @@
 
     .heading,
     .contact_form,
+    .contact-details-card,
     .contact section p {
         width: 90%;
     }

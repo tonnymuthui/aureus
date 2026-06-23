@@ -2,6 +2,7 @@
   width: 100%;
   padding: 20px 0 40px;
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 .services-body__section {

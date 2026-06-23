@@ -85,7 +85,7 @@ const Contact = () => {
                             <label>Inquiry Type</label> <br/>
                             <select id="inquiry" name="inquiry">  
                                 <option value="PPEs Inquiry">PPEs Inquiry</option>
-                                <option value="General Supplies Inquiry">General Suplies Inquiry</option>
+                                <option value="General Supplies Inquiry">General Supplies Inquiry</option>
                                 <option value="Corporate Branding Inquiry">Corporate Branding Inquiry</option>
                                 <option value="Other Inquiry">Other Inquiry</option>
                             </select>

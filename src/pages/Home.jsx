@@ -2,7 +2,7 @@
 import "../styles/home.css";
 import Navbar from "../components/navbar.jsx";
 import HeroSlider from "../components/heroSlider";
-import LogoCarousel from "../components/logoCarousel";
+// import LogoCarousel from "../components/logoCarousel";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
 // import hero1 from "../assets/herotest.png"
@@ -124,8 +124,8 @@ brand identity.
       </section>
 
       <section className="clients">
-        <h2>Our Partners & Clients</h2>
-        <LogoCarousel />
+        {/* <h2>Our Partners & Clients</h2>
+        <LogoCarousel /> */}
       </section>
 
       <Footer /> 
